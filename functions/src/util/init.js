@@ -3,13 +3,12 @@ const firebase = require('firebase');
 const app = require('express')();
 const expressSanitizer = require('express-sanitizer');
 const cors = require('cors');
-const serviceAccount = require('../../service-account.json');
 const firebaseConfig = require('./config');
 
 const initApp = () => {
 	firebase.initializeApp(firebaseConfig);
 	admin.initializeApp({
-		credential: admin.credential.cert(serviceAccount),
+		credential: admin.credential.applicationDefault(),
 		databaseURL: 'https://derwenthorpe-dra.firebaseio.com',
 	});
 
