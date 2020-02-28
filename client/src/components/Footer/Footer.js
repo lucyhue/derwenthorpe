@@ -25,6 +25,7 @@ export function Footer(props) {
 	const stylesheet = useStyles();
 	const [mobileOpen, setMobileOpen] = useState(false);
 
+
 	return (
 		<footer className={footerClasses} >
 			<div className={stylesheet.container} >
@@ -42,9 +43,7 @@ export function Footer(props) {
 							<input className={classes.formName} type="text" name="name" placeholder="Name" />
 							<input className={classes.formEmail} type="email" name="email" placeholder="Email Address" />
 							<input className={classes.formMessage} type="message" name="message" placeholder="Message" />
-
-						<input className={classes.formSubmit} type="submit"/>
-
+							<SendIcon classname={classes.icon} />
 					</form>
 				</div>
 				<div className={classes.footerLinks}>

@@ -69,6 +69,14 @@ export const useStyles = makeStyles((theme) => ({
 			color: '#555555',
 			gridArea: 'box8',
 	},
+	icon: {
+			color: 'action',
+			gridArea: 'box8',
+	},
+	muiIconRoot: {
+			color: 'action',
+			gridArea: 'box8',
+	},
 	container,
 	container: {
 		...container,
