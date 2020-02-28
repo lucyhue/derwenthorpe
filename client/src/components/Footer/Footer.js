@@ -30,7 +30,7 @@ export function Footer(props) {
 			<div className={stylesheet.container} >
 					<BrandLogo />
 				<div className={classes.footerfooterJRHT}>
-					<Link to='/'>
+					<Link to='https://www.jrht.org.uk/'>
 						<img className={classes.footerJRHT} src='JRHT-logo.jpg' alt='JRHT logo'/>
 					</Link>
 				</div>

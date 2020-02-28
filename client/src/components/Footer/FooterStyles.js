@@ -63,9 +63,10 @@ export const useStyles = makeStyles((theme) => ({
 			color: '#555555',
 			gridArea: 'box3',
 			backgroundColor: '#CAE0AC',
+			paddingBottom: '25px',
 	},
 	formSubmit: {
-			color: '#000000',
+			color: '#555555',
 			gridArea: 'box8',
 	},
 	container,
