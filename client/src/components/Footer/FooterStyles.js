@@ -26,6 +26,7 @@ export const useStyles = makeStyles((theme) => ({
 	},
 	footer: {
 		padding: '0.9375rem',
+		width: '100%',
 		textAlign: 'center',
 		display: 'flex',
 		backgroundColor: theme.palette.background.light,
@@ -34,7 +35,7 @@ export const useStyles = makeStyles((theme) => ({
 		position: 'relative',
 	},
 	a: {
-		color: primaryColor,
+		color: 'primaryColor',
 		textDecoration: 'none',
 		backgroundColor: 'transparent',
 	},
@@ -43,7 +44,20 @@ export const useStyles = makeStyles((theme) => ({
 			color: '#FFFFFF',
 		},
 	},
+	label: {
+			color: '#555555',
+	},
 	container,
+	container: {
+		...container,
+		minHeight: '50px',
+		flex: '1',
+		backgroundColor: theme.palette.background.light,
+		alignItems: 'center',
+		justifyContent: 'space-between',
+		display: 'flex',
+		flexWrap: 'nowrap',
+	},
 	list: {
 		marginBottom: '0',
 		padding: '0',
@@ -74,9 +88,9 @@ export const useStyles = makeStyles((theme) => ({
 		height: '48px',
 		padding: '10px',
 	},
-	JRHT: {
-		height: '48px',
-		padding: '5px',
+	footerJRHT: {
+		height: '36px',
+		padding: '10px',
 	},
 	footerLinks: {
 		flexDirection:'column',
@@ -85,11 +99,11 @@ export const useStyles = makeStyles((theme) => ({
 		'& > a': {
 			display: 'flex',
 			textDecoration: 'none',
-			color: theme.palette.text.link,
+			color: '#555555',
 			fontSize: '12px',
 		},
 	},
-		form: {
+		footerform: {
 		flexDirection:'row',
 		fontFamily: ['Roboto'],
 		fontSize: '12px',

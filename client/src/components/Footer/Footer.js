@@ -1,6 +1,6 @@
 // copied from Material Kit React (https://demos.creative-tim.com/material-kit-react)
 
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { Link } from 'react-router-dom';
@@ -20,17 +20,22 @@ export function Footer(props) {
 		[classes.footer]: true,
 		[classes.footerWhiteFont]: whiteFont,
 	});
+
+	const stylesheet = useStyles();
+	const [mobileOpen, setMobileOpen] = useState(false);
+
 	return (
 		<footer className={footerClasses} >
+			<div className={stylesheet.container} >
 					<BrandLogo />
-				<div className={classes.JRHT}>
+				<div className={classes.footerfooterJRHT}>
 					<Link to='/'>
-						<img className={classes.JRHT} src='jrht-logo.jpg' alt='JRHT logo'/>
+						<img className={classes.footerJRHT} src='JRHT-logo.jpg' alt='JRHT logo'/>
 					</Link>
 				</div>
-				<div className={classes.form}>
+				<div className={classes.footerform}>
 					<form>
-						<label>
+						<label className={classes.label}>
 							Contact Us:
 							<input type="text" name="name" placeholder="Name" />
 							<input type="email" name="email" placeholder="Email Address" />
@@ -40,8 +45,9 @@ export function Footer(props) {
 					</form>
 				</div>
 				<div className={classes.footerLinks}>
-					<Link className={classes.footerLink} to='/TermsAndConditions'>Terms of Use</Link>
-					<Link className={classes.footerLink} to='/PrivacyPolicy'>Privacy Policy</Link>
+					<Link to='/TermsAndConditions'>Terms of Use</Link>
+					<Link to='/PrivacyPolicy'>Privacy Policy</Link>
+				</div>
 				</div>
 				</footer>
 	);
