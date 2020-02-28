@@ -46,6 +46,27 @@ export const useStyles = makeStyles((theme) => ({
 	},
 	label: {
 			color: '#555555',
+			gridArea: 'box1',
+			padding: '5px',
+	},
+	formName: {
+			color: '#555555',
+			gridArea: 'box2',
+			backgroundColor: '#CAE0AC',
+	},
+	formEmail: {
+			color: '#555555',
+			gridArea: 'box6',
+			backgroundColor: '#CAE0AC',
+	},
+	formMessage: {
+			color: '#555555',
+			gridArea: 'box3',
+			backgroundColor: '#CAE0AC',
+	},
+	formSubmit: {
+			color: '#000000',
+			gridArea: 'box8',
 	},
 	container,
 	container: {
@@ -57,6 +78,18 @@ export const useStyles = makeStyles((theme) => ({
 		justifyContent: 'space-between',
 		display: 'flex',
 		flexWrap: 'nowrap',
+	},
+containergrid: {
+	  fontSize: '12px',
+	  width: '100%',
+	  background: 'transparent',
+		display: 'grid',
+		gridTemplateColumns: 'auto 160px 160px 50px',
+		gridTemplateRows: '25px 25px',
+		gridTemplateAreas: `
+                    'box1 box2 box3 box4'
+                    'box5 box6 box3 box8'
+                `
 	},
 	list: {
 		marginBottom: '0',
@@ -79,7 +112,7 @@ export const useStyles = makeStyles((theme) => ({
 		flexDirection: 'row',
 		marginTop: theme.spacing(1),
 		marginBottom: theme.spacing(1),
-		width: '300px',
+		width: '237.5px',
 		fontFamily: ['Roboto', 'sans-serif'],
 		textDecoration: 'none',
 		color: '#707070',
@@ -99,6 +132,7 @@ export const useStyles = makeStyles((theme) => ({
 		'& > a': {
 			display: 'flex',
 			textDecoration: 'none',
+			padding: '5px',
 			color: '#555555',
 			fontSize: '12px',
 		},
