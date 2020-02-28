@@ -73,10 +73,16 @@ export const useStyles = makeStyles((theme) => ({
 			color: 'action',
 			gridArea: 'box8',
 	},
-	muiIconRoot: {
-			color: 'action',
-			gridArea: 'box8',
-	},
+	MuiSvgIconRoot: {
+    fill: 'blue',
+    width: '1em',
+    height: '1em',
+    display: 'inlineBlock',
+    fontSize: '1.5rem',
+    transition: 'fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms',
+    flexShrink: '0',
+    userSelect: 'none',
+},
 	container,
 	container: {
 		...container,

@@ -43,7 +43,7 @@ export function Footer(props) {
 							<input className={classes.formName} type="text" name="name" placeholder="Name" />
 							<input className={classes.formEmail} type="email" name="email" placeholder="Email Address" />
 							<input className={classes.formMessage} type="message" name="message" placeholder="Message" />
-							<SendIcon classname={classes.icon} />
+							<SendIcon classname={classes.icon} fontSize="small" color="action"/>
 					</form>
 				</div>
 				<div className={classes.footerLinks}>
