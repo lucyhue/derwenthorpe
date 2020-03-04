@@ -73,7 +73,7 @@ export const useStyles = makeStyles((theme) => ({
 			color: 'action',
 			gridArea: 'box8',
 	},
-	MuiSvgIconRoot: {
+	svgIcon: {
     fill: 'blue',
     width: '1em',
     height: '1em',
@@ -82,6 +82,7 @@ export const useStyles = makeStyles((theme) => ({
     transition: 'fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms',
     flexShrink: '0',
     userSelect: 'none',
+		gridArea:'box8',
 },
 	container,
 	container: {
